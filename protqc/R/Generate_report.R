@@ -115,7 +115,7 @@ GenerateProteinReport <- function(Prot_result = NULL, doc_file_path = NULL, outp
   
   
   
-  text_1 = "The performance of the submitted data will be graded as Bad, Fair, Good, or Great based on the ranking by comparing the total score with the historical datasets.The total score is the harmonic mean of the scaled values of the number of features, missing percentage, absolute correlation, coefficient of variantion, Signal-to-Noise Ratio (SNR), and relative correlation with reference datasets (RC)."
+  text_1 = "The performance of the submitted data will be graded as Bad, Fair, Good, or Great based on the ranking by comparing the total score with the historical datasets. The total score is the harmonic mean of the scaled values of the number of features, missing percentage, absolute correlation, coefficient of variation, Signal-to-Noise Ratio (SNR), and relative correlation with reference datasets (RC)."
   ### Four levels of performance
   text_1_sup_1 = "Based on the scaled total score, the submitted data will be ranked together with all Quartet historical datasets. The higher the score, the higher the ranking. After this, the performance levels will be assigned based on their ranking ranges."
   text_1_sup_2 = "· Bad - the bottom 20%."
@@ -128,9 +128,9 @@ GenerateProteinReport <- function(Prot_result = NULL, doc_file_path = NULL, outp
   
   
   ### Performance Score
-  text_2 = "Scores of evaluation metrics for the current batch and all historical batches assessed.Please note that the results shown here are scaled values for all batches in each metric. The name of your data is Queried_Data."
+  text_2 = "Scores of evaluation metrics for the current batch and all historical batches assessed. Please note that the results shown here are scaled values for all batches in each metric. The name of your data is Queried_Data."
   ### Signal-to-Noise Ratio
-  text_3 = "SNR is established to characterize the power in discriminating multiple groups. The PCA plot is used to visualise the metric."
+  text_3 = "SNR is established to characterize the power in discriminating multiple groups. The PCA plot is used to visualize the metric."
   ### Correlation with Reference Datasets
   text_4 = "Relative correlation with reference datasets metric which was representing the numerical consistency of the relative expression profiles."
   
