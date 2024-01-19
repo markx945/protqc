@@ -27,10 +27,15 @@ devtools::install_github("markx945/protqc")
 ## Examples
 ```
 ### Calculate QC metrics
-exp_path <- './test/input/example_data_for_test1.csv'
-meta_path <- './test/input/example_meta_for_test1.csv'
+### your data path
+# exp_path <- './test/input/example_data_for_test1.csv'
+# meta_path <- './test/input/example_meta_for_test1.csv'
+
+## example data
+example_prot_data_path <- system.file("extdata","proteomics_pipeline_data_template.csv",package = "protqc")
+example_prot_metadata_path <- system.file("extdata","proteomics_pipeline_meta_template.csv",package = "protqc")
 output_dir <- './test/output/test1'
-prot_result <- protqc::qc_conclusion(exp_path, meta_path, output_dir, plot=TRUE)
+prot_result <- protqc::qc_conclusion(example_prot_data_path, example_prot_metadata_path, output_dir, plot=TRUE)
 
 ### Generate report
 # path to report template
