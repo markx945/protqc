@@ -17,7 +17,7 @@
 
 ## Installation
 ```
-devtools::install_github("QiaochuChen/protqc")
+devtools::install_github("markx945/protqc")
 ```
 
 ## Usage
@@ -26,10 +26,19 @@ devtools::install_github("QiaochuChen/protqc")
 
 ## Examples
 ```
+### Calculate QC metrics
 exp_path <- './test/input/example_data_for_test1.csv'
 meta_path <- './test/input/example_meta_for_test1.csv'
 output_dir <- './test/output/test1'
-protqc::qc_conclusion(exp_path, meta_path, output_dir, plot=FALSE)
+prot_result <- protqc::qc_conclusion(exp_path, meta_path, output_dir, plot=TRUE)
+
+### Generate report
+# path to report template
+doc_file_path_example <- system.file("extdata", "Quartet_temp.docx", package = "protqc")
+
+### generate report
+GenerateReport(Prot_result=prot_result, doc_file_path=doc_file_path_example, output_path=output_dir)
+
 ```
 
 ## Built-in Data
