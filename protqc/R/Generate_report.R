@@ -53,7 +53,7 @@
 #' 
 
 
-GenerateReport <- function(Prot_result = NULL, doc_file_path = NULL, output_path = NULL) {
+GenerateProteinReport <- function(Prot_result = NULL, doc_file_path = NULL, output_path = NULL) {
   
   if(is.null(Prot_result) || is.null(doc_file_path)) {
     stop("All arguments (Prot_result, doc_file_path) are required.")
