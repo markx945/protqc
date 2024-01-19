@@ -13,7 +13,7 @@
 
 ## Depends
   Environment: R (>= 3.5.0)<br />
-  Packages: dplyr,data.table,ggplot2,ggthemes,edgeR,limma,reshape2,psych
+  Packages: dplyr,data.table,ggplot2,ggthemes,edgeR,limma,reshape2,psych,officer,flextable
 
 ## Installation
 ```
