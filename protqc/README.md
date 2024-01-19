@@ -36,7 +36,6 @@ prot_result <- protqc::qc_conclusion(exp_path, meta_path, output_dir, plot=TRUE)
 # path to report template
 doc_file_path_example <- system.file("extdata", "Quartet_temp.docx", package = "protqc")
 
-### generate report
 GenerateReport(Prot_result=prot_result, doc_file_path=doc_file_path_example, output_path=output_dir)
 
 ```
