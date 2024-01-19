@@ -17,7 +17,7 @@
 
 ## Installation
 ```
-devtools::install_github("markx945/protqc")
+devtools::install_github("markx945/protqc",subdir = "protqc")
 ```
 
 ## Usage
