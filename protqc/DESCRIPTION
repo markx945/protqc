@@ -1,0 +1,29 @@
+Package: protqc
+Title: protqc
+Version: 1.0.0
+Authors@R: 
+    person("Qiaochu", "Chen", role = c("aut", "cre"),
+    email = "chenqiaochu@sjtu.edu.cn")
+Depends: R (>= 3.5.0)
+Imports: 
+    stats,
+    rlang,
+    stringi,
+    utils,
+    dplyr,
+    data.table,
+    ggplot2,
+    ggthemes,
+    edgeR,
+    limma,
+    reshape2,
+    psych,
+    tibble,
+    flextable,
+    officer
+Description: Quality assessment of proteomic data for Quartet Project.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3.9000
+LazyData: true
