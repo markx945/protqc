@@ -46,7 +46,7 @@
 #' output_path_example <- getwd()
 #'
 #' # 运行函数
-#' GenerateReport(Prot_result=prot_result, doc_file_path=doc_file_path_example, output_path=output_path_example)
+#' GenerateProteinReport(Prot_result=prot_result, doc_file_path=doc_file_path_example, output_path=output_path_example)
 #'
 #'
 #' @export
