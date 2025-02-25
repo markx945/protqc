@@ -298,10 +298,10 @@ qc_cor <- function(expr_dt, meta_dt,
     col2 <- which(meta_dt$sample %in% "D6")
 
     e_tmp <- expr_matrix[, c(col1, col2)]
-    e_tmp <- e_tmp[apply(e_tmp, 1, function(x) length(which(x == 0)) < 3), ]
+    e_tmp <- e_tmp[apply(e_tmp, 1, function(x) length(which(x == 0)) < min(length(col1), length(col2))), ]
     expr_grouped <- e_tmp[rownames(e_tmp) %in% ref_tmp$Sequence, ]
 
-    sample_pairs <- factor(x = rep(c(samples[j], "D6"), each = 3),
+    sample_pairs <- factor(x = rep(c(samples[j], "D6"), each = c(length(col1), length(col2))),
                            levels = c("D6", samples[j]),
                            ordered = T)
     result_tmp <- dep_analysis(expr = expr_grouped, group = sample_pairs)
